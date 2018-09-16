@@ -1,0 +1,22 @@
+#server:
+#  servlet:
+#    context-path: /springboot
+#  port: 9999
+#    # 使用默认的数据库连接池配置
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/jtdb?characterEncoding=utf-8
+#    username: root
+#    password: 123456
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/
+#      suffix: .jsp
+#mybatis:
+#  config-location: classpath:/mybatis/mybatis-config.xml
+#  mapper-locations: /mybatis/mappers/*.xml
+#  type-aliases-package: com.chinasoft.springboot.demo.pojo
+spring:
+  profiles:
+    active: dev

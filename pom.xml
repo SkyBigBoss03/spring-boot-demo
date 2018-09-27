@@ -107,12 +107,18 @@
             <!--<artifactId>spring-rabbit</artifactId>-->
             <!--<version>1.4.0.RELEASE</version>-->
         <!--</dependency>-->
-        <!--&lt;!&ndash; 定时任务 &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.quartz-scheduler</groupId>-->
-            <!--<artifactId>quartz</artifactId>-->
-            <!--<version>2.2.1</version>-->
-        <!--</dependency>-->
+
+        <!-- spring's support for quartz -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <!-- 定时任务 -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>2.2.1</version>
+        </dependency>
         <!--定时任务需要依赖c3p0jar包  -->
         <dependency>
             <groupId>c3p0</groupId>

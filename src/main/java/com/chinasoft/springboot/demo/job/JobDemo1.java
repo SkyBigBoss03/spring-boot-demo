@@ -8,6 +8,7 @@ import java.util.Date;
 
 @Component
 public class JobDemo1 {
+    //每分钟执行一次
     @Scheduled(cron = "0 0/1 * * * ?")
     public void testJob(){
         System.out.println("now time:"+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
